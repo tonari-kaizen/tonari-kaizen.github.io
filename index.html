@@ -3996,6 +3996,8 @@ p { margin: 0; }
 .rcp--pc .rcp__eyebrow::after { display: block; }
 .rcp--pc .rcp__title .ln { display: inline; }
 .rcp--pc .rcp__rule { margin-inline: auto; }
+.rcp--pc .rcp__rule { margin-block: .4em; }
+.rcp--pc .rcp__text { line-height: 1.35; }
 .rcp--pc .rcp__join { align-items: center; }
 .rcp--pc .btn-join { width: auto; max-width: 100%; padding-inline: 1.6em; }
 .rcp--sp .rcp__card { justify-content: flex-start; }
@@ -4041,13 +4043,13 @@ p { margin: 0; }
         </h1>
         <div class="hero__body">
           <p class="hero__lead">
-            <span class="ln">集客、売り方、利益、日々の業務。</span>
-            <span class="ln"><span class="ph">自分の商品やサービスを、</span><span class="ph">もっと良くしていきたい人へ。</span></span>
-            <span class="ln"><span class="ph">仕事に役立つヒントを届ける、</span><span class="ph">無料のオープンチャットです。</span></span>
+            <span class="ln">集客、リピート、利益、日々の業務。</span>
+            <span class="ln"><span class="ph">頑張りが利益につながる、</span><span class="ph">お店の基盤づくり。</span></span>
+            <span class="ln"><span class="ph">店舗支援の現場で学んだ</span><span class="ph">改善の考え方や、</span><span class="ph">仕事に使えるAI活用法を届ける、</span><span class="ph">無料の公式LINEです。</span></span>
           </p>
           <div class="join">
             <a class="btn-join" href="{{ joinHref }}" aria-disabled="{{ joinDisabled }}">
-              <span><span class="ph">となりの経営改善室に</span><span class="ph">無料で参加する</span></span>
+              <span><span class="ph">公式LINEを</span><span class="ph">無料で追加する</span></span>
               <svg sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
             </a>
             <sc-if value="{{ joinPending }}" hint-placeholder-val="{{ true }}">
@@ -4172,7 +4174,7 @@ p { margin: 0; }
                 <span class="num">04</span>
                 <div>
                 <h3><span class="ph">知りたいことを</span><span class="ph">リクエストできる</span></h3>
-                <p><span class="phs">専用フォームから</span><span class="phs">届いた悩みや</span><span class="phs">リクエストを、</span><span class="phs">今後の配信テーマに</span><span class="phs">生かします。</span></p>
+                <p><span class="phs">LINEのメニューから</span><span class="phs">届いた悩みや</span><span class="phs">リクエストを、</span><span class="phs">今後の配信テーマに</span><span class="phs">生かします。</span></p>
                 </div>
                 </li>
                 </ol>
@@ -4408,18 +4410,19 @@ p { margin: 0; }
       <p class="rcp__copy" aria-hidden="true">© となりの経営改善室</p>
       <div class="rcp__card" data-rcp-card="">
         <div class="rcp__inner" data-rcp-inner="">
-          <p class="rcp__eyebrow">参加への案内</p>
+          <p class="rcp__eyebrow">LINE追加案内</p>
           <h2 class="rcp__title" id="join-title"><span class="ln"><span class="ph">自分のペースで、</span></span><span class="ln"><span class="ph">仕事をひとつ</span><span class="ph">良くしていく。</span></span></h2>
           <span class="rcp__rule" aria-hidden="true"></span>
           <div class="rcp__text">
-            <p class="rcp__p1"><span class="t-sub"><span class="ph">管理者からの配信が</span><span class="ph">中心なので、</span></span><span class="t-key"><span class="ph">読むだけの参加も</span><span class="ph">歓迎です。</span></span></p>
-            <p class="rcp__p2"><span class="t-safe"><span class="ph">自己紹介や挨拶は不要。</span></span><span class="t-tail"><span class="ph">気になる内容から、</span><span class="ph">気軽に</span><span class="ph">のぞいてみてください。</span></span></p>
+            <p class="rcp__p1"><span class="t-sub"><span class="phs">友だち追加で、</span><span class="phs">お店の集客・利益改善や</span><span class="phs">AI活用に使える</span></span><span class="t-key"><span class="phs">4つのChatGPT</span><span class="phs">プロンプトを</span><span class="phs">無料で受け取れます。</span></span></p>
+            <p class="rcp__p2"><span class="t-safe"><span class="phs">店舗支援の現場で学んだ</span><span class="phs">改善のヒントも、</span><span class="phs">このLINEで</span><span class="phs">届けていきます。</span></span><span class="t-tail"><span class="phs">まずは、</span><span class="phs">気になる部屋をひとつ</span><span class="phs">試してみてください。</span></span></p>
           </div>
           <div class="join rcp__join">
             <a class="btn-join" href="{{ joinHref }}" aria-disabled="{{ joinDisabled }}">
-              <span><span class="ph">LINEオープンチャットに</span><span class="ph">無料で参加する</span></span>
+              <span><span class="ph">公式LINEを</span><span class="ph">無料で追加する</span></span>
               <svg sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
             </a>
+            <p class="join__status"><span class="ph">LINE公式アカウント</span><span class="ph">「みそら｜</span><span class="ph">今日も事業を改善」が開きます</span></p>
             <sc-if value="{{ joinPending }}" hint-placeholder-val="{{ true }}">
               <p class="join__status">{{ joinStatus }}</p>
             </sc-if>
@@ -4437,7 +4440,7 @@ p { margin: 0; }
 
 </div>
 </x-dc>
-<script type="text/x-dc" data-dc-script="" data-props="{&quot;joinUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://line.me/ti/g2/kpd2NttsLI7ooZUNvlPWe0tMZ6wQfvJgwV1JNg?utm_source=invitation&amp;utm_medium=link_copy&amp;utm_campaign=default&quot;,&quot;section&quot;:&quot;参加URL&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:7920}}">
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;joinUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://lin.ee/peZUqjr&quot;,&quot;section&quot;:&quot;公式LINE URL&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:7920}}">
 class Component extends DCLogic {
   checkJoinUrl(raw) {
     const url = String(raw || '').trim();
@@ -4459,9 +4462,9 @@ class Component extends DCLogic {
     }
     const j = this.checkJoinUrl(this.props.joinUrl);
     const status = {
-      unset: '※ 参加URLが未設定のため、ボタンは無効です（プレビュー表示）',
-      invalid: '※ 参加URLの形式が正しくないため、ボタンを無効にしています（https:// から始まるURLを設定してください）',
-      form: '※ Googleフォームのアドレスは参加先に設定できません。オープンチャットの参加URLを設定してください'
+      unset: '※ 公式LINEのURLが未設定のため、ボタンは無効です（プレビュー表示）',
+      invalid: '※ 公式LINEのURLの形式が正しくないため、ボタンを無効にしています（https:// から始まるURLを設定してください）',
+      form: '※ Googleフォームのアドレスは追加先に設定できません。公式LINEの友だち追加URLを設定してください'
     };
     return {
       setRoot: this._setRoot,
@@ -6944,7 +6947,7 @@ class Component extends DCLogic {
       var SPVG = { card: { x0: 146, x1: 518, y0: 330, y1: 746 }, keep0: 280, keep1: 1120, N: 121, FPS: 24 };
       var PARTS = { eyebrow: inner.querySelector(".rcp__eyebrow"), title: inner.querySelector(".rcp__title"), rule: inner.querySelector(".rcp__rule"),
                     p1: inner.querySelector(".rcp__p1"), p2: inner.querySelector(".rcp__p2"), join: inner.querySelector(".rcp__join") };
-      /* 段階：見出し → 本文の前半（主役：読むだけの参加も歓迎です。） → 本文の後半（安心材料と最後の案内） → 見出しと参加ボタン（最後は表示したまま） */
+      /* 段階：見出し → 本文の前半（友だち追加の特典） → 本文の後半（改善のヒントと最後の案内） → 見出しと追加ボタン（最後は表示したまま） */
       var PAGES = [["eyebrow", "title", "rule"], ["p1"], ["p2"], ["eyebrow", "title", "join"]];
       var V2END = (SPVG.N - 0.5) / SPVG.FPS;
       function spvWant() { return !still() && !!type && !!(R.spv && R.spv[type]) && !!V2.box; }
